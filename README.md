@@ -7,20 +7,27 @@ Abychom to měli jasnější, potřebujeme také napsat, kolik peněz vydělají
 
 ## Vstupní datové sady pro získání podkladu:
 ### Primární tabulky
-czechia_payroll – Informace o mzdách v různých odvětvích za několikaleté období. Datová sada pochází z Portálu otevřených dat ČR.
+- *czechia_payroll* – Informace o mzdách v různých odvětvích za několikaleté období. Datová sada pochází z Portálu otevřených dat ČR.
 
-czechia_price – Informace o cenách vybraných potravin za několikaleté období. Datová sada pochází z Portálu otevřených dat ČR.
+- *czechia_price* – Informace o cenách vybraných potravin za několikaleté období. Datová sada pochází z Portálu otevřených dat ČR.
 
 ### Číselníky sdílených informací o ČR
-czechia_payroll_calculation – Číselník kalkulací v tabulce mezd.
+- *czechia_payroll_calculation* – Číselník kalkulací v tabulce mezd.
 
-czechia_payroll_industry_branch – Číselník odvětví v tabulce mezd.
+- *czechia_payroll_industry_branch* – Číselník odvětví v tabulce mezd.
 
-czechia_payroll_unit – Číselník jednotek hodnot v tabulce mezd.
+- *czechia_payroll_unit* – Číselník jednotek hodnot v tabulce mezd.
 
-czechia_payroll_value_type – Číselník typů hodnot v tabulce mezd.
+- *czechia_payroll_value_type* – Číselník typů hodnot v tabulce mezd.
 
-czechia_price_category – Číselník kategorií potravin, které se vyskytují v našem přehledu.
+- *czechia_price_category** – Číselník kategorií potravin, které se vyskytují v našem přehledu.
+
+
+
+ **Pro zodpovězení výzkumných otázek jsem vytvořil dvě tabulky, které budou sloužit jako základní zdroj dat**
+- **t_daniel_kadar_project_SQL_primary_final**: pro data mezd a cen potravin za Českou republiku sjednocených na totožné porovnatelné období – společné roky.
+
+-  **t_daniel_kadar_project_SQL_secondary_final**: pro dodatečná data o dalších evropských státech
 
 ## Výzkumné otázky
 ***První otázka***
