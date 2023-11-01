@@ -1,1 +1,50 @@
-# engeto_project
+# Zadání projektu: Zpracování dat týkajících se platů a cen potravin za použití jazyka SQL.
+Na pracovním oddělení firmy, která se stará o informace o tom, jak lidé žijí, máte úkol zjistit, jestli si lidé mohou snadno koupit základní jídlo. Tví kolegové už vymysleli otázky, na které chceme najít odpovědi. Těmto odpovědím budeme věřit a budeme je ukazovat na nadcházející konferenci, která se zaměřuje na tuto problematiku.
+
+Potřebujeme udělat seznam s čísly, které ukáže, jak se mění cena jídla a kolik lidé vydělávají, když uplyne určitý čas.
+
+Abychom to měli jasnější, potřebujeme také napsat, kolik peněz vydělají v jiných evropských zemích a jak je tam chudoba a bohatství.
+
+## Vstupní datové sady pro získání podkladu:
+### Primární tabulky
+czechia_payroll – Informace o mzdách v různých odvětvích za několikaleté období. Datová sada pochází z Portálu otevřených dat ČR.
+
+czechia_price – Informace o cenách vybraných potravin za několikaleté období. Datová sada pochází z Portálu otevřených dat ČR.
+
+### Číselníky sdílených informací o ČR
+czechia_payroll_calculation – Číselník kalkulací v tabulce mezd.
+
+czechia_payroll_industry_branch – Číselník odvětví v tabulce mezd.
+
+czechia_payroll_unit – Číselník jednotek hodnot v tabulce mezd.
+
+czechia_payroll_value_type – Číselník typů hodnot v tabulce mezd.
+
+czechia_price_category – Číselník kategorií potravin, které se vyskytují v našem přehledu.
+
+## Výzkumné otázky
+***První otázka***
+- Q: Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
+- A:
+
+***Druhá otázka***
+- Q: Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?
+- A:
+
+***Třetí otázka***
+- Q: Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?
+- A:
+
+***Čtvrtá otázka***
+- Q: Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?
+- A: 
+
+***Pátá otázka***
+- Q: Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo násdujícím roce výraznějším růstem? 
+- A: 
+
+
+## Výstup a závěr projektu
+?
+?
+?
