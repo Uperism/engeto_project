@@ -32,7 +32,20 @@ Abychom to měli jasnější, potřebujeme také napsat, kolik peněz vydělají
 ## Výzkumné otázky
 ***První otázka***
 - Q: Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
-- A:
+- A: Jak můžeme vidět z dat, která vychází z dotazu dostupných v souboru "1) first question.sql", tak mzdy v České republice napříč odvětvími v letech 2006 - 2018 klesají, ale rostou. Největší procentuální propad ve mzdách, oproti předchozímu roku, měli odvětví všechny v roce 2013
+***• Peněžnictví a pojišťovnictví -16,11 %**
+***• Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu -13,04 %**
+***• Kulturní, zábavní a rekreační činnosti - 6,53 %**
+
+Zatímco největší nárůst měli tato odvětví:
+V roce 2008 ***•Těžba a dobývání 16,64 %**.
+V roce 2009 ***•Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu 16,49 %**.
+V roce 2008 ***•Peněžnictví a pojišťovnictví 13,57 %**.
+
+Výrazní pokles mezd měla pravděpodobně ekonomická krize v letech 2012-2013.
+
+K tomuto závěru jsem přišel tak, že jsem spojil tabulky czechia_payroll a czechia_price do mé hlavní tabulky, ze které jsem následně rozvedl dotaz.
+
 
 ***Druhá otázka***
 - Q: Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?
