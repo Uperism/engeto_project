@@ -32,19 +32,19 @@ Abychom to měli jasnější, potřebujeme také napsat, kolik peněz vydělají
 ## Výzkumné otázky
 ***První otázka***
 - Q: Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
-- A: Jak můžeme vidět z dat, která vychází z dotazu dostupných v souboru "1) first question.sql", tak mzdy v České republice napříč odvětvími v letech 2006 - 2018 klesají, ale rostou. Největší procentuální propad ve mzdách, oproti předchozímu roku, měli odvětví všechny v roce 2013
-***• Peněžnictví a pojišťovnictví -16,11 %**
-***• Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu -13,04 %**
-***• Kulturní, zábavní a rekreační činnosti - 6,53 %**
+- A: Jak je patrné z dat získaných z dotazu dostupných v souboru "1) first question.sql", mzdy v České republice napříč odvětvími v letech 2006 - 2018 rostou i klesají. Největší procentuální pokles v mzdách oproti předchozímu roku byl zaznamenán v následujících odvětvích:
 
-Zatímco největší nárůst měli tato odvětví:
-V roce 2008 ***•Těžba a dobývání 16,64 %**.
-V roce 2009 ***•Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu 16,49 %**.
-V roce 2008 ***•Peněžnictví a pojišťovnictví 13,57 %**.
+**Peněžnictví a pojišťovnictví: -16,11 %**
+**Výroba a rozvod elektřiny, plynu, tepla a klimatizace vzduchu: -13,04 %**
+**Kulturní, zábavní a rekreační činnosti: -6,53 %**
+Naopak největší nárůst mezd byl zaznamenán v následujících odvětvích:
 
-Výrazní pokles mezd měla pravděpodobně ekonomická krize v letech 2012-2013.
+**V roce 2008 v odvětví Těžba a dobývání: 16,64 %**
+**V roce 2009 v odvětví Výroba a rozvod elektřiny, plynu, tepla a klimatizace vzduchu: 16,49 %**
+**V roce 2008 v odvětví Peněžnictví a pojišťovnictví: 13,57 %**
+Pravděpodobně výrazný pokles mezd nastal v letech 2012-2013, což může být způsobeno ekonomickou krizí.
 
-K tomuto závěru jsem přišel tak, že jsem spojil tabulky czechia_payroll a czechia_price do mé hlavní tabulky, ze které jsem následně rozvedl dotaz.
+K tomuto závěru jsem došel spojením tabulek czechia_payroll a czechia_price do mé hlavní tabulky, ze které jsem následně odvodil tento dotaz.
 
 
 ***Druhá otázka***
