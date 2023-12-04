@@ -49,7 +49,7 @@ K tomuto závěru jsem došel spojením tabulek czechia_payroll a czechia_price 
 
 ***Druhá otázka***
 - Q: Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?
-- A:
+- A: Dostupná data pro ceny chleba a mléka jsou v letech 2006 až 2008, proto v tomto období porovnávam ceny s průměrnou hrubou mzdou. V roce 2006 bylo možné za průměrnou mzdu zakoupit 1494 kg chleba a 1492 litrů mléka. V roce 2018 bylo možné zakoupit za průměrnou            hrubou mzdu 1359 kg chleba a 1725 litrů mléka. Je tedy zřejmé, že v průběhu let je nákup chleba výrazě dražší vůči průměrně hrubé mzdě, než je tomu u mléka, kde cena zůstala takčka neměnná. 
 
 ***Třetí otázka***
 - Q: Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?
