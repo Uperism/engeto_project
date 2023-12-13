@@ -36,25 +36,30 @@ FROM countries ;
 SELECT *
 FROM economies ;
 
+CREATE OR REPLACE TABLE t_dksp2 -- pomocná tabulka
+SELECT
+	cp.category_code,
+	cp.region_code,
+	year(cp.date_from) AS 'date_from',
+	AVG(cp.value) AS average_value
+FROM czechia_price cp
+GROUP BY cp.region_code, cp.category_code, year(cp.date_from);
 
-
-CREATE TABLE IF NOT EXISTS t_daniel_kadar_project_SQL_primary_final_1
-SELECT 
-		cpay.value AS salary,
-		cpay.value_type_code,
-		cpay.unit_code,
-		cpay.calculation_code,
-		cpay.industry_branch_code,
-		cpay.payroll_year,
-		cp.value AS price,
-		cp.category_code AS item_code, 
-		DATE (cp.date_from) AS 'date_from',
-		DATE (cp.date_to) AS 'date_to'
+CREATE OR REPLACE TABLE t_daniel_kadar_project_sql_primary_final
+SELECT
+	cpay.value AS payroll_value,
+	cpay.payroll_year,
+	cpay.industry_branch_code,
+	cpay.value_type_code,
+	cpay.unit_code,
+	cpay.calculation_code,
+	dksp2.category_code,
+	dksp2.region_code,
+	dksp2.date_from,
+	dksp2.average_value
 FROM czechia_payroll cpay
-LEFT JOIN czechia_price cp 
-	ON cpay.payroll_year = YEAR(cp.date_from)
-WHERE cp.date_from IS NOT NULL 
-ORDER BY cp.date_from ASC ;
+LEFT JOIN t_dksp2 AS dksp2
+	ON dksp2.date_from = cpay.payroll_year;
 
 
 
