@@ -5,7 +5,7 @@ SELECT
 	e.GDP,
 	e.gini,
 	e.population,
-	e.`year`
+	e.'year'
 FROM countries c 
 LEFT JOIN economies e 
 	ON e.country = c.country 
